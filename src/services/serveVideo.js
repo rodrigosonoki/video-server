@@ -8,10 +8,10 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const serveVideo = async (job, done) => {
-  const { message } = job.data;
+  const { videoUrl } = job.data;
 
   console.log("[1/4] Retrieving video informations...");
-  const video = await getVideoInfo(message);
+  const video = await getVideoInfo(videoUrl);
 
   console.log("[2/5] Downloading video...");
   await downloadVideo(video);
