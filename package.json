@@ -15,7 +15,8 @@
     "nodemon": "^2.0.19"
   },
   "scripts": {
-    "start": "nodemon ./src/index",
+    "start": "node ./src/index",
+    "dev": "nodemon ./src/index",
     "video": "node ./src/video.js",
     "title": "node ./src/use-cases/getVideoTitle.js",
     "spaces": "node ./src/spaces/config.js"
