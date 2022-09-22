@@ -11,6 +11,6 @@ const opts = {
   },
 };
 
-const queue = new Queue("videoserver", opts);
+const queue = new Queue(process.env.MESSAGE_QUEUE, opts);
 
 export default queue;
